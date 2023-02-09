@@ -1,0 +1,38 @@
+#nome{
+    color: #9030B4;
+}
+#borda{ 
+    border-radius: 1%;
+    border: 3px solid #201225;
+}
+.links{
+  color: #9030B4;
+}
+#texto{
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 3s steps(26) alternate,
+      blink 800ms steps(20) infinite normal;
+    border-right: 5px solid black;
+  }
+  @keyframes typewriter {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink {
+    from {
+      border-color: black;
+    }
+    to {
+      border-color: transparent;
+    }
+  }
+.botoes{
+  display: inline-flex;
+  justify-content: space-around;
+}
+

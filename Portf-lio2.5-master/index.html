@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Gustavo Azevedo</title>
+  <meta name="description" content="Portfolio Template for Developer" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="./assets/png/favicon.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+    rel="stylesheet" />
+
+<!-- modais -->
+  <link rel="stylesheet" href="./css/port.css">
+  <link rel="stylesheet" href="./css/modal.css">
+  <link rel="stylesheet" href="./css/modal2.css">
+  <link rel="stylesheet" href="./css/modal3.css">
+<!-- ------ -->
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo-container">
+
+        <span class="header__logo-sub">&lt; Gustavo<a id="nome"> Azevedo/></a></span>
+      </div>
+      <div class="header__main">
+        <ul class="header__links">
+          <li class="header__link-wrapper">
+            <a href="./index.html" class="header__link"> Home </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#about" class="header__link">Sobre mim </a>
+          </li>
+
+          <li class="header__link-wrapper">
+            <a href="./index.html#projects" class="header__link">
+              Projetos
+            </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#contact" class="header__link"> Contatos </a>
+          </li>
+        </ul>
+        <div class="header__main-ham-menu-cont">
+          <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+          <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
+            class="header__main-ham-menu-close d-none" />
+        </div>
+      </div>
+    </div>
+    <div class="header__sm-menu">
+      <div class="header__sm-menu-content">
+        <ul class="header__sm-menu-links">
+          <li class="header__sm-menu-link">
+            <a href="./index.html"> Home </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#about"> Sobre mim </a>
+          </li>
+
+
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#projects"> Projetos </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#contact"> Contatos </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="home-hero">
+    <div class="home-hero__content">
+      <h1 class="heading-primary" id="texto">Olá, meu nome é <a id="nome">Gustavo.</a></h1>
+      <div class="home-hero__info">
+        <p class="text-primary" id="text">
+          Tenho 21 anos e trabalho com desenvolvimento de software back-end e alguns trabalhos de front-end.
+        </p>
+      </div>
+      <div class="home-hero__cta">
+        <a href="./#projects" class="btn btn--bg">Meus projetos</a>
+      </div>
+    </div>
+
+    <div class="home-hero__mouse-scroll-cont">
+      <div class="mouse"></div>
+    </div>
+  </section>
+  <section id="about" class="about sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main">Sobre mim</span>
+        <span class="heading-sec__sub">
+          Como dito antes, me chamo Gustavo Azevedo e tenho 21 anos, formado em <a>Técnico em Informática</a>, moro no
+          interior de São Paulo e sou um apaixonado por tecnologia.
+
+          Decidi trabalhar com isso pois me identifiquei muito com esse meio, onde o meu papel é ajudar ao máximo as
+          pessoas e deixar a vida delas menos complicada.
+          Hoje em dia, o meu foco no meio profissional é a programação. <br>Abaixo estarei citando qualificações que
+          tenho, as ferramentas que uso para fazer meus projetos e alguns exemplos de trabalhos que fiz.
+        </span>
+      </h2>
+      <div class="about__content" id="qualificacoes">
+        <div class="about__content-main">
+          <h3 class="about__content-title">Qualificações e Experiências</h3>
+          <div class="about__content-details">
+            <p class="about__content-details-para">
+
+            </p>
+            <p class="about__content-details-para">
+              Tenho certificado em manutenção de hardware, qualificação em redes e alguns desenvolvimentos de software.
+            </p>
+            <button id="open-modal">
+              <a class="btn btn--med btn--theme dynamicBgClr">
+                HARDWARE</a>
+            </button>
+            <br><br>
+            <button id="open-modal2">
+              <a class="btn btn--med btn--theme dynamicBgClr">
+                SOFTWARE</a>
+            </button>
+            <br><br>
+            <button id="open-modal3">
+              <a class="btn btn--med btn--theme dynamicBgClr">
+                REDES</a>
+            </button>
+            
+          </div>
+
+          
+
+          <!-- modal 1 -->
+          <div id="fade" class="hide"></div>
+          <div id="modal" class="hide">
+            <div class="modal-header">
+              <h2 class="about__content-title" >HARDWARE</h3>
+              <button id="close-modal">Fechar</button>
+            </div>
+            <div class="about__content-details-para">
+              <p>
+                Tenho <strong>Qualificação Profissional Técnica em Assistente de Suporte e Manutenção de Computadores</strong>, autorizado via Conselho
+                 Regional do Senac.
+                 <br>           
+              </p>
+              <p>
+                <br>
+                <a href="./downloads/qualHARDWARE.pdf" download="Qualificação Hardware" class="links">
+                  VER CERTIFICADO </a>
+                  <br><br>
+              </p>
+              <p>
+                Além disso, tenho um projeto de cotação de peças (desde peças de computador, 
+                impressoras à celulares das pessoas da família) e a montagem de uma casa, onde
+                 foi pensado e analisado peça por peça para ter o melhor custo beneficio para o
+                 cliente e sua familia, sendo que para ele foi montado um computador capaz de iniciar
+                 seus programas de uso profissional sem problemas.<br><br>
+              </p>
+              <p>
+                Toda a documentação deste trabalho foi feito e armazenado no <strong>Trello ©</strong><br><br>
+              </p>
+              <p>
+                <a href="./downloads/Cotação_e_Justificativa.docx" download="Cotação" class="links">
+                  DOWNLOAD COTAÇÃO </a>
+              </p>
+            </div>
+          </div>
+
+
+          <!-- modal 2 -->
+
+          <div id="fade2" class="hide2"></div>
+          <div id="modal2" class="hide2">
+            <div class="modal2-header2">
+              <h2 class="about__content-title" >SOFTWARE</h3>
+              <button id="close2-modal2">Fechar</button>
+            </div>
+            <div class="about__content-details-para">
+              <p>
+                Ao longo deste Portfólio coloquei alguns trabalhos e projetos que fiz ao longo do curso.
+                 <br><br>           
+              </p>
+              <!-- <p>
+                <br>
+                <a href="" class="links">
+                  VER CERTIFICADO </a>
+                  <br><br>
+              </p> -->
+              <p>
+                Nesses projetos utilizei ferramentas como o Visual Studio e Visual Studio Code, MySQL, Firebase, Xampp
+                e linguagens de programação como C#.  Usando elas fiz uma agenda, onde o usuário pode fazer anotações diárias,
+                colocar a data de aniversário de seus amigos e consultas no médico, por exemplo. 
+                Utilizei o MySQL para o banco de dados, guardando os dados que o cliente inserir na agenda.
+               <br><br>
+               Fiz dois trabalhos/jogos, o GuNinja que é um jogo simples de obstáculos e a GuDex, uma cópia de uma Pokedex, com pesquisa
+               dos Pokemons por nome e por numeração.
+              </p>
+             
+              
+            </div>
+          </div>
+          
+          <!-- modal 3 -->
+
+          <div id="fade3" class="hide3"></div>
+          <div id="modal3" class="hide3">
+            <div class="modal3-header3">
+              <h2 class="about__content-title" >REDES</h3>
+              <button id="close3-modal3">Fechar</button>
+            </div>
+            <div class="about__content-details-para">
+              <p>
+                Tenho <strong>Qualificação Profissional Técnica em Assistente de Operação de Redes de Computadores</strong>, autorizado via Conselho
+                 Regional do Senac.
+                 <br>           
+              </p>
+              <p>
+                <br>
+                <a href="./downloads/qualREDES.pdf" download="Qualificação Redes" class="links">
+                  VER CERTIFICADO </a>
+                  <br><br>
+              </p>
+              <p>
+                Um dos trabalhos que fiz sobre esse tema foi a cópia da planta do Senac Guaratinguetá, onde foi passado a metragem da construção e fizemos o croqui dessa planta 
+                no Revit e todos os pontos de redes do lugar. Passado esses dados, eu e meu grupo trabalhamos no Packet Tracer © (Cisco Packet Tracer © como o nome sugere, é uma 
+                ferramenta desenvolvida pela Cisco. Esta ferramenta fornece uma simulação de rede para a prática de redes simples e complexas) a configuração de IP ,DHCP, 
+                etiquetas para computadores do Senac Guaratinguetá, tanto de PCs Administrativos e Educacionais. 
+                Fomos em todas as salas da escola contar a quantidade de pontos de internet, ver os roteadores presentes nos corredores e fazer as etiquetas para 
+                identificação dos pontos.<br><br>
+              </p>
+              <p>
+                Toda a documentação deste trabalho foi feito e armazenado no <strong>Trello ©</strong><br><br>
+              </p>
+              <p>
+                <a href="./downloads/PROJETO-REDE.zip" download="Projeto de Redes" class="links">
+                  DOWNLOAD PROJETO </a>
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="about__content-skills">
+          <h3 class="about__content-title">Linguagens e Ferramentas que uso.</h3>
+          <div class="skills">
+            <div class="skills__skill">HTML</div>
+            <div class="skills__skill">CSS</div>
+            <div class="skills__skill">JavaScript</div>
+            <div class="skills__skill">C#</div>
+            <div class="skills__skill">Packet Tracer</div>
+            <div class="skills__skill">MySQL</div>
+            <div class="skills__skill">Firebase</div>
+            <div class="skills__skill">Photoshop</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section id="projects" class="projects sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Meus Projetos</span>
+        <span class="heading-sec__sub">
+          Esses são uns dos projetos que fiz durante o curso, eles usam linguagens de programação e cada um utiliza
+          métodos de desenvolvimento diferente.
+        </span>
+      </h2>
+
+      <div class="projects__content">
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/img/guninja.png" alt="Software Screenshot" class="projects__row-img" loading="lazy"
+              id="borda" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">GuNinja</h3>
+            <p class="projects__row-content-desc">
+              Projeto feito em HTML, CSS e JavaScript.<br>
+
+            </p>
+            <a href="https://gu-ninja.vercel.app/" class="btn btn--med btn--theme dynamicBgClr"
+              target="_blank">TESTAR</a>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/img/gudex.png" alt="Software Screenshot" class="projects__row-img" loading="lazy"
+              id="borda" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">GuDex</h3>
+            <p class="projects__row-content-desc">
+              Projeto feito em HTML, CSS e JavaScript.<br>
+
+            </p>
+            <a href="https://gudex.vercel.app/" class="btn btn--med btn--theme dynamicBgClr" target="_blank">TESTAR</a>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/img/fotoagenda.png" alt="Software Screenshot" class="projects__row-img" loading="lazy"
+              id="borda" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Agenda Pessoal</h3>
+            <p class="projects__row-content-desc">
+              Atividade realizade no Visual Studio, utilizando a linguagem C# e MySQL
+            </p>
+            <a class="btn btn--med btn--theme dynamicBgClr" target="_blank">TESTAR</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact sec-pad dynamicBg">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main heading-sec__main--lt">Vamos trabalhar <a id="nome">juntos?</a></span>
+        <span class="heading-sec__sub heading-sec__sub--lt">
+          Entre em contato para fazer um orçamento e me mandar a sua ideia para podermos torna-lá realidade!
+        </span>
+      </h2>
+      <div class="contact__form-container">
+        <form action="#" class="contact__form" id="task-form">
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="name">Nome</label>
+            <input required placeholder="Seu nome." type="text" class="contact__form-input" name="name" id="name" />
+          </div>
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="email">Email</label>
+            <input required placeholder="Seu melhor email." type="text" class="contact__form-input" name="email"
+              id="email" />
+          </div>
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="message">Mensagem</label>
+            <textarea required cols="4" rows="4" class="contact__form-input"
+              placeholder="Me mande uma mensagem ou uma dúvida que teve." name="message" id="message"></textarea>
+          </div>
+          <button type="submit" class="btn btn--theme contact__btn" id="butao">
+            Enviar ✉
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="main-container">
+      <div class="main-footer__upper">
+        <div class="main-footer__row main-footer__row-1">
+          <h2 class="heading heading-sm main-footer__heading-sm">
+            <span>Redes sociais</span>
+          </h2>
+          <div class="main-footer__social-cont">
+            <a target="_blank" rel="noreferrer">
+              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/GustavoAzvdo">
+              <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer">
+              <img class="main-footer__icon" src="./assets/png/twitter-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer">
+              <img class="main-footer__icon" src="./assets/png/yt-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/gustavxazevedo/?igshid=NDk5N2NlZjQ%3D">
+              <img class="main-footer__icon main-footer__icon--mr-none" src="./assets/png/insta-ico.png" alt="icon" />
+            </a>
+          </div>
+        </div>
+        <div class="main-footer__row main-footer__row-2">
+          <h4 class="heading heading-sm text-lt">@gustavxazevedo</h4>
+          <p class="main-footer__short-desc">
+            Me siga nas redes sociais para conhecer um pouco mais do meu trabalho!
+          </p>
+        </div>
+      </div>
+
+      <div class="main-footer__lower">
+        &copy; Copyright 2023. Feito por
+        <a rel="noreferrer" target="_blank">Gustavo Azevedo</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+  <script src="./js/index.js" type="module"></script>
+  <script src="./js/modal.js"></script>
+  <script src="./js/modal2.js"></script>
+  <script src="./js/modal3.js"></script>
+
+</body>
+
+</html>
